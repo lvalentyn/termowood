@@ -1,6 +1,6 @@
 .lifestyle {
     padding: 131px 60px 113px;
-    background: linear-gradient(rgba(16, 16, 16, 0.87)), url(../../img/bg/lifestylebg.jpg) center center/cover no-repeat;
+    background: linear-gradient(rgba(16, 16, 16, 0.87)), url(../img/bg/lifestylebg.jpg) center center/cover no-repeat;
     &__title {
         font-weight: 500;
         font-size: 4.2rem;
@@ -41,7 +41,7 @@
                         transform: translateX(-50%);
                         width: 56px;
                         height: 56px;
-                        background: url(../../img/icons/zoomlifestyle.png);
+                        background: url(../img/icons/zoomlifestyle.png);
                         transition: all .5s;
                     }
                 }
@@ -79,7 +79,7 @@
                         transform: translateX(-50%);
                         width: 56px;
                         height: 56px;
-                        background: url(../../img/icons/zoomlifestyle.png);
+                        background: url(../img/icons/zoomlifestyle.png);
                         transition: all .5s;
                     }
                 }
@@ -117,7 +117,7 @@
                         transform: translateX(-50%);
                         width: 56px;
                         height: 56px;
-                        background: url(../../img/icons/zoomlifestyle.png);
+                        background: url(../img/icons/zoomlifestyle.png);
                         transition: all .5s;
                     }
                 }

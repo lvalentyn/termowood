@@ -307,9 +307,9 @@ body {
 
 .advantages {
   padding: 131px 0 67px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 16, 16, 0.84)), to(rgba(16, 16, 16, 0.84))), url(../../img/bg/advantagesbg.jpg) center center/cover no-repeat;
-  background: -o-linear-gradient(bottom, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../../img/bg/advantagesbg.jpg) center center/cover no-repeat;
-  background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../../img/bg/advantagesbg.jpg) center center/cover no-repeat; }
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 16, 16, 0.84)), to(rgba(16, 16, 16, 0.84))), url(../img/bg/advantagesbg.jpg) center center/cover no-repeat;
+  background: -o-linear-gradient(bottom, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/advantagesbg.jpg) center center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/advantagesbg.jpg) center center/cover no-repeat; }
   .advantages__title {
     font-weight: 500;
     font-size: 4.2rem;
@@ -384,9 +384,9 @@ body {
 
 .companies {
   padding: 108px 0 101px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 16, 16, 0.84)), to(rgba(16, 16, 16, 0.84))), url(../../img/bg/companiesbg.jpg) center center/cover no-repeat;
-  background: -o-linear-gradient(bottom, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../../img/bg/companiesbg.jpg) center center/cover no-repeat;
-  background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../../img/bg/companiesbg.jpg) center center/cover no-repeat; }
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 16, 16, 0.84)), to(rgba(16, 16, 16, 0.84))), url(../img/bg/companiesbg.jpg) center center/cover no-repeat;
+  background: -o-linear-gradient(bottom, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/companiesbg.jpg) center center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/companiesbg.jpg) center center/cover no-repeat; }
 
 .comprehensive {
   padding: 149px 0 133px; }
@@ -483,9 +483,9 @@ body {
 
 .lifestyle {
   padding: 131px 60px 113px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 16, 16, 0.87))), url(../../img/bg/lifestylebg.jpg) center center/cover no-repeat;
-  background: -o-linear-gradient(rgba(16, 16, 16, 0.87)), url(../../img/bg/lifestylebg.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(16, 16, 16, 0.87)), url(../../img/bg/lifestylebg.jpg) center center/cover no-repeat; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 16, 16, 0.87))), url(../img/bg/lifestylebg.jpg) center center/cover no-repeat;
+  background: -o-linear-gradient(rgba(16, 16, 16, 0.87)), url(../img/bg/lifestylebg.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(16, 16, 16, 0.87)), url(../img/bg/lifestylebg.jpg) center center/cover no-repeat; }
   .lifestyle__title {
     font-weight: 500;
     font-size: 4.2rem;
@@ -535,7 +535,7 @@ body {
                   transform: translateX(-50%);
           width: 56px;
           height: 56px;
-          background: url(../../img/icons/zoomlifestyle.png);
+          background: url(../img/icons/zoomlifestyle.png);
           -webkit-transition: all .5s;
           -o-transition: all .5s;
           transition: all .5s; }
@@ -585,7 +585,7 @@ body {
                   transform: translateX(-50%);
           width: 56px;
           height: 56px;
-          background: url(../../img/icons/zoomlifestyle.png);
+          background: url(../img/icons/zoomlifestyle.png);
           -webkit-transition: all .5s;
           -o-transition: all .5s;
           transition: all .5s; }
@@ -634,16 +634,16 @@ body {
                   transform: translateX(-50%);
           width: 56px;
           height: 56px;
-          background: url(../../img/icons/zoomlifestyle.png);
+          background: url(../img/icons/zoomlifestyle.png);
           -webkit-transition: all .5s;
           -o-transition: all .5s;
           transition: all .5s; }
 
 .lookingfor {
   padding: 80px 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 16, 16, 0.84)), to(rgba(16, 16, 16, 0.84))), url(../../img/bg/lookingforbg.jpg) center center/cover no-repeat;
-  background: -o-linear-gradient(bottom, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../../img/bg/lookingforbg.jpg) center center/cover no-repeat;
-  background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../../img/bg/lookingforbg.jpg) center center/cover no-repeat; }
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 16, 16, 0.84)), to(rgba(16, 16, 16, 0.84))), url(../img/bg/lookingforbg.jpg) center center/cover no-repeat;
+  background: -o-linear-gradient(bottom, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/lookingforbg.jpg) center center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/lookingforbg.jpg) center center/cover no-repeat; }
   .lookingfor .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -721,9 +721,9 @@ body {
 
 .products {
   padding: 131px 0 90px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 16, 16, 0.84)), to(rgba(16, 16, 16, 0.84))), url(../../img/bg/productsbg.jpg) center center/cover no-repeat;
-  background: -o-linear-gradient(bottom, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../../img/bg/productsbg.jpg) center center/cover no-repeat;
-  background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../../img/bg/productsbg.jpg) center center/cover no-repeat; }
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 16, 16, 0.84)), to(rgba(16, 16, 16, 0.84))), url(../img/bg/productsbg.jpg) center center/cover no-repeat;
+  background: -o-linear-gradient(bottom, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/productsbg.jpg) center center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/productsbg.jpg) center center/cover no-repeat; }
   .products__title {
     font-weight: 500;
     font-size: 4.2rem;
@@ -953,7 +953,7 @@ body {
         left: 17px;
         width: 9px;
         height: 17px;
-        background: url(../../img/icons/arrow.svg) center center/cover no-repeat; }
+        background: url(../img/icons/arrow.svg) center center/cover no-repeat; }
       .infoblock__slider .my-slick-prev:hover {
         background-color: #E0B76E;
         -webkit-transition: all .5s;
@@ -963,7 +963,7 @@ body {
           -webkit-transform: rotate(180deg);
               -ms-transform: rotate(180deg);
                   transform: rotate(180deg);
-          background: url(../../img/icons/arrowhover.svg) center center/cover no-repeat; }
+          background: url(../img/icons/arrowhover.svg) center center/cover no-repeat; }
     .infoblock__slider .my-slick-next {
       position: absolute;
       bottom: 24px;
@@ -989,7 +989,7 @@ body {
         -webkit-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
                 transform: rotate(180deg);
-        background: url(../../img/icons/arrow.svg) center center/cover no-repeat; }
+        background: url(../img/icons/arrow.svg) center center/cover no-repeat; }
       .infoblock__slider .my-slick-next:hover {
         background-color: #E0B76E;
         -webkit-transition: all .5s;
@@ -999,7 +999,7 @@ body {
           -webkit-transform: rotate(0deg);
               -ms-transform: rotate(0deg);
                   transform: rotate(0deg);
-          background: url(../../img/icons/arrowhover.svg) center center/cover no-repeat; }
+          background: url(../img/icons/arrowhover.svg) center center/cover no-repeat; }
   .infoblock__slide {
     width: 100%;
     height: 477px;
