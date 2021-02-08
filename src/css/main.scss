@@ -1,0 +1,51 @@
+@import "libs/resetcss";
+@import "libs/slick";
+@import "base/fonts";
+@import "base/animations";
+@import "base/media";
+
+
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+}
+.page {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 1800px;
+    margin: 0 auto;
+    position: relative;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+
+@import "components/about";
+@import "components/advantages";
+@import "components/btns";
+@import "components/companies";
+@import "components/comprehensive";
+@import "components/footer";
+@import "components/header";
+@import "components/lifestyle";
+@import "components/lookingfor";
+@import "components/products";
+@import "components/reviews";
+@import "components/warranty";
+@import "components/navbar";
+@import "components/forms";
+@import "components/infoblock";
+

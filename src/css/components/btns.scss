@@ -1,0 +1,20 @@
+.btn {
+min-width: 261px;
+height: 45.2px;
+background: #EBE26B;
+border-radius: 16px;
+border: none;
+outline: none;
+font-family: 'Montserrat';
+font-size: 1.4rem;
+color: #000000;
+cursor: pointer;
+&.form__btn {
+    margin-top: 13px;
+    width: 305px;
+}
+&.infoblock__btn {
+    min-width: 305px;
+    height: 49.13px;
+}
+}

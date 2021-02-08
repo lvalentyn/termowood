@@ -1,0 +1,175 @@
+.blocks {
+    padding: 60px 0 131px;
+}
+.infoblock {
+    margin: 78px auto 0;
+    min-height: 602px;
+    padding: 55px 37px 70px 44px;
+    background: #F7F7F7;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 31px;
+
+    display: flex;
+    justify-content: space-between;
+    &__slides {
+        width: 723px;
+    }
+    &__title {
+        font-size: 3.6rem;
+        text-align: center;
+        color: #292929;
+        span {
+            font-size: 2.4rem;
+        }
+    }
+    &__slider {
+        margin-top: 42px;
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+        .my-slick-prev {
+            position: absolute;
+            bottom: 24px;
+            right: 100px;
+            width: 50px;
+            height: 50px;
+            
+            background-color: inherit;
+            border: 2px solid #E0B76E;
+            border-radius: 100%;
+
+            z-index: 10;
+            outline: none;
+            cursor: pointer;
+            transition: all .5s;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 14px;
+                left: 17px;
+                width: 9px;
+                height: 17px;
+                background: url(../../img/icons/arrow.svg) center center/cover no-repeat;
+            }
+            &:hover {
+                background-color: #E0B76E;
+                transition: all .5s;
+                &::before {
+                    transform: rotate(180deg);
+                    background: url(../../img/icons/arrowhover.svg) center center/cover no-repeat;
+                }
+            }
+            
+        }
+        .my-slick-next {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            width: 50px;
+            height: 50px;
+
+            background-color: inherit;
+            border: 2px solid #E0B76E;
+            border-radius: 100%;
+
+            z-index: 10;
+            outline: none;
+            cursor: pointer;
+            transition: all .5s;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 14px;
+                left: 20px;
+                width: 9px;
+                height: 17px;
+                transform: rotate(180deg);
+                background: url(../../img/icons/arrow.svg) center center/cover no-repeat;
+            }
+            &:hover {
+                background-color: #E0B76E;
+                transition: all .5s;
+                &::before {
+                    transform: rotate(0deg);
+                    background: url(../../img/icons/arrowhover.svg) center center/cover no-repeat;
+                }
+            }
+        }
+    }
+    &__slide {
+        width: 100%;
+        height: 477px;
+        border-radius: 30px;
+        position: relative;
+        overflow: hidden;
+        outline: none;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 32.85%);
+            filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
+        }
+    }
+    &__wrapper {
+        width: 933px;
+    }
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__tab {
+        width: 303px;
+        height: 50px;
+        border: 2px solid #292929;
+        border-radius: 16px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.8rem;
+        color: #000000;
+        transition: all .5s;
+        &:hover {
+            border: 2px solid #EBE26B;
+            background: #EBE26B;
+            cursor: pointer;
+            transition: all .5s;
+        }
+    }
+    &__text {
+        padding: 77px 51px 70px;
+    }
+    &__descr {
+        min-height: 344px;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        color: #000000;
+        p {
+            margin-bottom: 30px;
+        }
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 51px;
+        &_text {
+            width: 472px;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            text-align: right;
+            color: #000000;
+        }
+    }
+}
