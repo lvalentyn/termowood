@@ -23,3 +23,18 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+$('.infoblock__tab').on('click', function () {
+    let thisTabIndex = $(this).attr('data-tab'),
+        tabContainer = $(this).parent().siblings('.infoblock__text'),
+        thisTabContainer = tabContainer.find(`.infoblock__descr[data-tab='${thisTabIndex}']`);
+
+    $(this)
+        .addClass('active')
+        .siblings().removeClass('active');
+
+    thisTabContainer
+        .addClass('active')
+        .siblings().removeClass('active');
+});

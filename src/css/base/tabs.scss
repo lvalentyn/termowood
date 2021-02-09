@@ -1,0 +1,13 @@
+.infoblock__tab{
+  &.active{
+    background: #EBE26B;
+    border: 1px solid transparent;
+  }
+}
+
+.infoblock__descr{
+  display: none;
+  &.active{
+    display: block;
+  }
+}

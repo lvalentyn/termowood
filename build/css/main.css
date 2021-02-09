@@ -216,6 +216,15 @@ table {
       -ms-transform: scale(1);
           transform: scale(1); }
 
+.infoblock__tab.active {
+  background: #EBE26B;
+  border: 1px solid transparent; }
+
+.infoblock__descr {
+  display: none; }
+  .infoblock__descr.active {
+    display: block; }
+
 html {
   font-size: 10px; }
 
