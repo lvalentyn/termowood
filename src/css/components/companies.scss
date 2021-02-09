@@ -1,4 +1,89 @@
 .companies {
     padding: 108px 0 101px;
     background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/companiesbg.jpg) center center/cover no-repeat;
+    &__slider {
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        .my-slick-prev {
+            position: absolute;
+            bottom: -86px;
+            right: 50%;
+            transform: translateX(-40%);
+            width: 50px;
+            height: 50px;
+            
+            background-color: inherit;
+            border: 2px solid #E0B76E;
+            border-radius: 100%;
+
+            z-index: 10;
+            outline: none;
+            cursor: pointer;
+            transition: all .5s;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 14px;
+                left: 17px;
+                width: 9px;
+                height: 17px;
+                background: url(../img/icons/arrow.svg) center center/cover no-repeat;
+            }
+            &:hover {
+                background-color: #E0B76E;
+                transition: all .5s;
+                &::before {
+                    transform: rotate(180deg);
+                    background: url(../img/icons/arrowhover.svg) center center/cover no-repeat;
+                }
+            }
+            
+        }
+        .my-slick-next {
+            position: absolute;
+            bottom: -86px;
+            right: 50%;
+            transform: translateX(140%);
+            width: 50px;
+            height: 50px;
+
+            background-color: inherit;
+            border: 2px solid #E0B76E;
+            border-radius: 100%;
+
+            z-index: 10;
+            outline: none;
+            cursor: pointer;
+            transition: all .5s;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 14px;
+                left: 20px;
+                width: 9px;
+                height: 17px;
+                transform: rotate(180deg);
+                background: url(../img/icons/arrow.svg) center center/cover no-repeat;
+            }
+            &:hover {
+                background-color: #E0B76E;
+                transition: all .5s;
+                &::before {
+                    transform: rotate(0deg);
+                    background: url(../img/icons/arrowhover.svg) center center/cover no-repeat;
+                }
+            }
+        }
+        &_item {
+            width: 151.5px;
+            height: 151.5px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }

@@ -21,5 +21,33 @@ window.addEventListener('DOMContentLoaded', () => {
             prevArrow: '<button type="button" class="my-slick-prev"></button>',
             nextArrow: '<button type="button" class="my-slick-next"></button>'
         });
+        $('.companies__slider').slick({
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 5,
+            prevArrow: '<button type="button" class="my-slick-prev"></button>',
+            nextArrow: '<button type="button" class="my-slick-next"></button>',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
     });
+
 });
