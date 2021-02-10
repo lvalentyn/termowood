@@ -9,6 +9,13 @@ font-family: 'Montserrat';
 font-size: 1.4rem;
 color: #000000;
 cursor: pointer;
+transition: all .2s ease;
+&:hover {
+    color: #EBE26B;
+    background: linear-gradient(317.11deg, #0C0C0C 0%, #2B2B2B 100%);
+    border: 1px solid #EBE26B;
+    transition: all .2s ease;
+}
 &.form__btn {
     margin-top: 13px;
     width: 305px;

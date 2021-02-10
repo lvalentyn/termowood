@@ -8,6 +8,7 @@ $(document).ready(function () {
             $('.navbar').removeClass('sticky');
         }
     });
+    // slick-sliders
     $('.infoblock__slider').slick({
         slidesToShow: 1,
         infinite: true,
@@ -17,6 +18,7 @@ $(document).ready(function () {
         swipe: true,
         autoplay: true,
         autoplaySpeed: 5000,
+        fade: true,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>'
     });
@@ -31,18 +33,6 @@ $(document).ready(function () {
         swipe: true,
         autoplay: true,
         autoplaySpeed: 5000,
-        prevArrow: '<button type="button" class="my-slick-prev"></button>',
-        nextArrow: '<button type="button" class="my-slick-next"></button>',
-    });
-    $('.products__slider').slick({
-        infinite: true,
-        dots: false,
-        arrows: true,
-        speed: 2000,
-        swipe: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        slidesToShow: 4,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>',
     });
@@ -67,9 +57,11 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 5000,
         slidesToShow: 1,
+        fade: true,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>',
     });
+    // tabs
     $('.infoblock__tab').on('click', function () {
         let thisTabIndex = $(this).attr('data-tab'),
             tabContainer = $(this).parent().siblings('.infoblock__text'),
@@ -82,5 +74,15 @@ $(document).ready(function () {
         thisTabContainer
             .addClass('active')
             .siblings().removeClass('active');
+    });
+    // маска телефон
+    let inputs = document.querySelectorAll('input[type="tel"]');
+    let im = new Inputmask('+38(999) 999-99-99');
+    im.mask(inputs);
+    // плавная прокрутка
+    $("a[href]").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
     });
 });

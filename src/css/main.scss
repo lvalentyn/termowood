@@ -4,10 +4,6 @@
 @import "base/animations";
 @import "base/media";
 
-@import "base/tabs";
-
-
-
 html {
     font-size: 10px;
 }
@@ -32,8 +28,6 @@ body {
 * {
     box-sizing: border-box;
 }
-
-
 
 @import "components/about";
 @import "components/advantages";

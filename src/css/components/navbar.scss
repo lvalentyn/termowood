@@ -6,6 +6,7 @@
     background-color: inherit;
     padding: 45px 0;
     z-index: 10;
+    transition: all .2s ease;
     .container {
         display: flex;
         justify-content: space-between;
@@ -14,10 +15,6 @@
     &__logo {
         min-width: 280px;
         height: 46.67px;
-        img {
-            width: 100%;
-            height: 100%;
-        }
     }
     &__center {
         display: flex;
@@ -26,17 +23,31 @@
         width: 100%;
         margin: 0 25px 0 97px;
     }
-    &__menu {
-
-    }
     &__item {
         margin-right: 80px;
         font-weight: 500;
         font-size: 1.8rem;
         color: #EBE26B;
         text-decoration: none;
+        position: relative;
         &:last-child {
             margin-right: 0;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #EBE26B;
+            transform: scale(0);
+            transition: all .2s ease;
+        }
+        &:hover {
+            &::before{
+            transform: scale(1);
+            }
         }
     }
     &__contacts {
@@ -46,11 +57,31 @@
             color: #EBE26B;
             font-size: 2.1rem;
             text-decoration: none;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: #EBE26B;
+                transform: scale(0);
+                transition: all .2s ease;
+            }
+            &:hover {
+                &::before{
+                transform: scale(1);
+                }
+            }
         }
         div {
             color: #EBE26B;
             font-size: 1.4rem;
         }
     }
-    
+    &.sticky {
+        padding: 15px 0;
+        background: rgba(0, 0, 0, .7);
+    }
 }

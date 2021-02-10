@@ -26,6 +26,7 @@
         margin-top: 42px;
         position: relative;
         border-radius: 30px;
+        filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
         overflow: hidden;
         .my-slick-prev {
             position: absolute;
@@ -41,7 +42,7 @@
             z-index: 10;
             outline: none;
             cursor: pointer;
-            transition: all .5s;
+            transition: all .2s ease;
 
             &::before {
                 content: '';
@@ -50,14 +51,14 @@
                 left: 17px;
                 width: 9px;
                 height: 17px;
-                background: url(../img/icons/arrow.svg) center center/cover no-repeat;
+                background: url("data:image/svg+xml,%3Csvg width='9' height='18' viewBox='0 0 9 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.97656 15.5025L3.63323 9L8.97656 2.4975L7.33156 0.5L0.331564 9L7.33156 17.5L8.97656 15.5025Z' fill='%23E0B76E'/%3E%3C/svg%3E%0A") center center/cover no-repeat;
             }
             &:hover {
                 background-color: #E0B76E;
-                transition: all .5s;
+                transition: all .2s ease;
                 &::before {
                     transform: rotate(180deg);
-                    background: url(../img/icons/arrowhover.svg) center center/cover no-repeat;
+                    background: url("data:image/svg+xml,%3Csvg width='9' height='18' viewBox='0 0 9 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.0234375 15.5025L5.36677 9L0.0234375 2.4975L1.66844 0.5L8.66844 9L1.66844 17.5L0.0234375 15.5025Z' fill='%231E1D19'/%3E%3C/svg%3E%0A") center center/cover no-repeat;
                 }
             }
             
@@ -76,7 +77,7 @@
             z-index: 10;
             outline: none;
             cursor: pointer;
-            transition: all .5s;
+            transition: all .2s ease;
 
             &::before {
                 content: '';
@@ -86,14 +87,14 @@
                 width: 9px;
                 height: 17px;
                 transform: rotate(180deg);
-                background: url(../img/icons/arrow.svg) center center/cover no-repeat;
+                background: url("data:image/svg+xml,%3Csvg width='9' height='18' viewBox='0 0 9 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.97656 15.5025L3.63323 9L8.97656 2.4975L7.33156 0.5L0.331564 9L7.33156 17.5L8.97656 15.5025Z' fill='%23E0B76E'/%3E%3C/svg%3E%0A") center center/cover no-repeat;
             }
             &:hover {
                 background-color: #E0B76E;
-                transition: all .5s;
+                transition: all .2s ease;
                 &::before {
                     transform: rotate(0deg);
-                    background: url(../img/icons/arrowhover.svg) center center/cover no-repeat;
+                    background: url("data:image/svg+xml,%3Csvg width='9' height='18' viewBox='0 0 9 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.0234375 15.5025L5.36677 9L0.0234375 2.4975L1.66844 0.5L8.66844 9L1.66844 17.5L0.0234375 15.5025Z' fill='%231E1D19'/%3E%3C/svg%3E%0A") center center/cover no-repeat;
                 }
             }
         }
@@ -139,12 +140,12 @@
 
         font-size: 1.8rem;
         color: #000000;
-        transition: all .5s;
+        transition: all .2s ease;
         &:hover {
             border: 2px solid #EBE26B;
             background: #EBE26B;
             cursor: pointer;
-            transition: all .5s;
+            transition: all .2s ease;
         }
         &.active{
             background: #EBE26B;
