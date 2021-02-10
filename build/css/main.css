@@ -387,17 +387,36 @@ body {
   font-size: 1.4rem;
   color: #000000;
   cursor: pointer;
+  position: relative;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease; }
-  .btn:hover {
-    color: #EBE26B;
-    background: -o-linear-gradient(132.89deg, #0C0C0C 0%, #2B2B2B 100%);
-    background: linear-gradient(317.11deg, #0C0C0C 0%, #2B2B2B 100%);
-    border: 1px solid #EBE26B;
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 16px;
+    z-index: -1;
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease; }
+  .btn:hover {
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    background: -o-linear-gradient(132.89deg, #0C0C0C 0%, #2B2B2B 100%);
+    background: linear-gradient(317.11deg, #0C0C0C 0%, #2B2B2B 100%);
+    border: 1px solid #EBE26B;
+    color: #EBE26B; }
+    .btn:hover:before {
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease;
+      opacity: 1; }
   .btn.form__btn {
     margin-top: 13px;
     width: 305px; }
@@ -1481,7 +1500,7 @@ body {
       .navbar__contacts a::before {
         content: '';
         position: absolute;
-        bottom: -3px;
+        bottom: -2px;
         left: 0;
         width: 100%;
         height: 2px;
