@@ -146,6 +146,10 @@
             cursor: pointer;
             transition: all .5s;
         }
+        &.active{
+            background: #EBE26B;
+            border: 1px solid transparent;
+        }
     }
     &__text {
         padding: 77px 51px 70px;
@@ -157,6 +161,10 @@
         color: #000000;
         p {
             margin-bottom: 30px;
+        }
+        display: none;
+        &.active{
+        display: block;
         }
     }
     &__footer {
