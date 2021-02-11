@@ -1280,6 +1280,10 @@
             }
         }
     }
+    .btn.warranty__btn {
+        min-width: 250px;
+        margin: 70px auto 0;
+    }
     .reviews {
         &__slider {
             .my-slick-next {
@@ -1333,6 +1337,140 @@
         }
     }
 }
-@media (max-width: 480px) {}
-@media (max-width: 320px) {}
+@media (max-width: 480px) {
+    .container {
+        width: 372px;
+    }
+    .header {
+        &__left {
+            margin-top: 50px;
+        }
+    }
+    .about {
+        &__info {
+            margin: 30px -240px 0 30px;
+            padding: 20px 235px 24px 20px;
+        }
+        &__title {
+            font-size: 2.5rem;
+            margin-left: -50px;
+        }
+        &__text {
+            font-size: 1.4rem;
+        }
+    }
+    .lifestyle {
+        .container {
+            padding: 30px 0;
+        }
+        &__title {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+    }
+    .comprehensive {
+        .container {
+            padding: 30px 0;
+        }
+        &__title {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+    }
+    .advantages {
+        .container {
+            padding: 30px 0;
+        }
+        &__title {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+        &__item{
+            &_icon {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    .infoblock {
+        &__tab {
+            font-size: 1.2rem;
+        }
+        &__text {
+            padding: 30px 10px;
+        }
+    }
+    .products {
+        .container {
+            padding: 30px 0;
+        }
+        &__title {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+        &__item{
+            &_icon {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    .warranty {
+        .container {
+            padding: 30px 0;
+        }
+        &__title {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+        &__slider {
+            .my-slick-prev {
+                top: 15px;
+                right: 50%;
+            }
+            .my-slick-next {
+                top: 15px;
+                right: 30%;
+
+            }
+        }
+    }
+    .btn.warranty__btn {
+        min-width: 250px;
+        margin: 40px auto 0;
+    }
+    .reviews {
+        .container {
+            padding: 30px 0;
+        }
+        &__title {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+        &__slide {
+            &_card {
+                margin: 155px 20px 0 -352px;
+            }
+        }
+    }
+    .footer {
+        .container {
+            padding: 30px 0;
+        }
+        &__address, &__links {
+            margin: 0;
+        }
+        &__map {
+            margin: 0;
+        }
+    }
+}
+@media (max-width: 413px) {
+    .header {
+        &__title {
+            color: red;
+        }
+        
+    }
+}
 }
