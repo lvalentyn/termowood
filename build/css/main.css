@@ -965,6 +965,73 @@ table {
   .page .footer__form {
     margin: 0 0 0 -372px; } }
 
+@media (max-width: 940px) {
+  .page .container {
+    width: 720px; }
+  .page .header__left {
+    margin: 0; }
+  .page .header__right {
+    margin-top: 40px; }
+  .page .header__title {
+    margin-bottom: 20px; }
+  .page .header__subtitle p {
+    margin-top: 50px; }
+    .page .header__subtitle p:last-child {
+      margin-top: 30px; }
+  .page .header__icons {
+    display: none; }
+  .page .header__item_icon {
+    width: 100px;
+    height: 100px; }
+  .page .advantages__title {
+    font-size: 2.7rem; }
+  .page .advantages__icons {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .page .advantages__item {
+    width: 150px; }
+    .page .advantages__item_title {
+      font-size: 1.6rem; }
+    .page .advantages__item_subtitle {
+      font-size: 1.4rem; }
+  .page .lookingfor .container {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .page .lookingfor__left {
+    margin-top: 60px; }
+  .page .lookingfor__title {
+    font-size: 2.8rem; }
+  .page .lookingfor__subtitle {
+    font-size: 2rem; }
+  .page .lookingfor__icons {
+    display: none; }
+  .page .products__title {
+    font-size: 2.7rem; }
+  .page .warranty__title {
+    font-size: 2.7rem; }
+  .page .warranty__slide {
+    height: 700px; }
+    .page .warranty__slide_img {
+      height: 225px; }
+  .page .btn.warranty__btn {
+    min-width: 250px;
+    margin: 10px auto 0; }
+  .page .reviews__title {
+    font-size: 2.7rem; }
+  .page .reviews__slide {
+    height: 600px; }
+    .page .reviews__slide_img {
+      height: 500px; }
+    .page .reviews__slide_card {
+      width: 400px;
+      margin: 66px 20px 0 -420px; }
+    .page .reviews__slide_descr {
+      font-size: 1.4rem;
+      line-height: 2.2rem; } }
+
 html {
   font-size: 10px; }
 
