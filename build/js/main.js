@@ -69,11 +69,8 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 100,
+                breakpoint: 764,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
                     slidesToShow: 1
                 }
             }
