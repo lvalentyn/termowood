@@ -79,6 +79,9 @@
     }
     .navbar {
         padding: 30px 0;
+        &.sticky {
+            padding: 20px 0;
+        }
         &__center {
             margin: 0 25px 0 45px;
         }
@@ -124,6 +127,14 @@
             min-width: 720px;
             height: 460px;
             min-height: 450px;
+            &_btn {
+                width: 120px;
+                height: 120px;
+                svg {
+                    width: 40%;
+                    height: 40%;
+                }
+            }
         }
         &__title {
             margin-left: -70px;
@@ -413,7 +424,289 @@
        
     }
 }
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+    .container {
+        width: 1150px;
+    }
+    .navbar {
+        padding: 20px 0;
+        &.sticky {
+            padding: 10px 0;
+        }
+        &__item {
+            margin-right: 20px;
+            font-size: 1.6rem;
+        }
+        &__contacts {
+            a {
+                font-size: 1.8rem;
+            }
+        }
+        
+    }
+    .header {
+        &__title {
+            font-size: 5rem;
+        }
+        &__subtitle {
+            p {
+                margin-top: 20px;
+                font-size: 2.2rem;
+                line-height: 2.5rem;
+            }
+        }
+        &__icons {
+            margin-top:35px;
+        }
+        &__item {
+            &_icon {
+                width: 150px;
+                height: 150px;
+            }
+            &_title {
+                font-size: 1.8rem;
+                line-height: 2rem;
+            }
+        }
+        &__form {
+            width: 372px;
+            height: 464px;
+            padding: 38px 14px 44px;
+            &_title {
+                font-size: 1.7rem;
+                line-height: 2.3rem;
+            }
+            &_subtitle {
+                margin-top: 30px;
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+            }
+            .form {
+                margin-top: 30px;
+                input {
+                    margin-bottom: 18px;
+                }
+                &__btn {
+                    margin-top: 26px;
+                }
+            }
+        }
+        
+    }
+    .about {
+        &__video {
+            min-width: 550px;
+            height: 430px;
+            min-height: 430px;
+        }
+        &__info {
+            min-width: auto;
+            padding: 20px 235px 24px 40px;
+        }
+        &__title {
+            font-size: 3rem;
+        }
+        &__text {
+            font-size: 1.6rem;
+        }
+    }
+    .lifestyle {
+        &__gallery {
+            &_photo {
+                &:hover {
+                    &::after {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .infoblock {
+        &__slides {
+            width: 450px;
+        }
+        &__slide {
+            height: 390px;
+        }
+        &__wrapper {
+            width: 595px;
+        }
+        &__tab {
+            width: 195px;
+            font-size: 1.4rem;
+        }
+        .btn.infoblock__btn {
+            min-width: 200px;
+            height: 45px;
+        }
+    }
+    .advantages {
+        &__icons {
+            margin-top:35px;
+        }
+        &__item {
+            width: 260px;
+            &_icon {
+                width: 150px;
+                height: 150px;
+            }
+            &_title {
+                font-size: 1.8rem;
+                line-height: 2rem;
+            }
+        }
+    }
+    .lookingfor {
+        &__icons {
+            margin-top:35px;
+        }
+        &__item {
+            width: 230px;
+            &_icon {
+                width: 150px;
+                height: 150px;
+            }
+            &_title {
+                font-size: 1.6rem;
+                line-height: 2rem;
+            }
+        }
+        &__form {
+            margin-left: 50px;
+            width: 372px;
+            height: 404px;
+            padding: 48px 14px 24px;
+            &_title {
+                font-size: 1.7rem;
+                line-height: 2.3rem;
+            }
+            &_subtitle {
+                margin:0 auto 50px;
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+            }
+            .form {
+                margin-top: 30px;
+                input {
+                    margin-bottom: 18px;
+                }
+                &__btn {
+                    margin-top: 26px;
+                }
+            }
+        }
+    }
+    .products {
+        &__icons {
+            margin-top:35px;
+        }
+        &__item {
+            width: 350px;
+            &_icon {
+                width: 150px;
+                height: 150px;
+            }
+            &_title {
+                font-size: 1.6rem;
+                line-height: 2rem;
+            }
+        }   
+    }
+    .warranty {
+        &__slider {
+            .my-slick-prev {
+                top: 10px;
+                right: 74px;
+            }
+            .my-slick-next {
+                top: 10px;
+                right: 0px;
+            }
+        }
+    }
+    .btn.warranty__btn {
+        min-width: 250px;
+        margin: 30px auto 0;
+    }
+    .reviews {
+        .container {
+            padding: 60px 0 20px;
+        }
+        &__slide {
+            padding: 0 0 50px;
+            height: 620px;
+            &_img {
+                width: 950px;
+                height: 520px;
+            }
+            &_card {
+                width: 600px;
+                margin: 50px 20px 0 -155px;
+                padding: 20px;
+            }
+            &_photo {
+                width: 100px;
+                height: 100px;
+            }
+            &_name {
+                font-size: 2rem;
+                span {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .footer {
+        &__place, &__contacts {
+            &_icon {
+                width: 50px;
+                height: 50px;
+                svg {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+        }
+        &__address {
+            font-size: 1.6rem;
+            margin: 16px 0;
+        }
+        &__links {
+            margin: 16px 0;
+        }
+        &__link {
+            font-size: 1.6rem;
+        }
+        &__map {
+            width: 400px;
+            height: 444px;
+        }
+        &__form {
+            width: 372px;
+            height: 444px;
+            padding: 50px 14px 44px;
+            &_title {
+                font-size: 1.7rem;
+                line-height: 2.3rem;
+            }
+            &_subtitle {
+                margin-top: 30px;
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+            }
+            .form {
+                margin-top: 30px;
+                input {
+                    margin-bottom: 18px;
+                }
+                &__btn {
+                    margin-top: 26px;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1200px) {}
 @media (max-width: 940px) {}
 @media (max-width: 764px) {}
