@@ -54,6 +54,23 @@ $(document).ready(function () {
         slidesToShow: 4,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
     $('.reviews__slider').slick({
         infinite: true,
