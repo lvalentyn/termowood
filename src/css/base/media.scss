@@ -1,5 +1,130 @@
 .page {
-@media (max-width: 1170px) {}
+@media (max-width: 1800px) {
+    .container {
+        width: 1550px;
+    }
+    .about {
+        &__video {
+            min-width: 820px;
+        }
+    }
+    .lifestyle {
+        &__gallery {
+            &_block1 {
+                min-width: 470px;
+            }
+            &_block2 {
+                min-width: 600px;
+            }
+            &_block3 {
+                min-width: 324px;
+            }
+        }
+    }
+    .infoblock {
+        &__slides {
+            width: 600px;
+        }
+        &__wrapper {
+            width: 800px;
+            margin-left: 20px;
+        }
+        &__tab {
+            width: 260px;
+        }
+        &__text {
+            padding: 57px 31px 50px;
+        }
+        &__footer {
+            padding: 0px 31px;
+            &_text {
+                width: 346px;
+            }
+        }
+    }
+    
+    .reviews {
+        &__slide {
+            &_img {
+                width: 1050px;
+            }
+        }
+    }
+    .footer {
+        &__map {
+            width: 530px;
+            height: 530px;
+        }
+    }
+    .btn {
+        &.warranty__btn {
+            margin: 30px auto 0;
+        }
+    }
+    
+    .lookingfor__form, .footer__form {
+        width: 530px;
+        height: 530px;
+        padding: 60px 40px;
+    }
+    .header__form {
+        width: 530px;
+        padding: 50px 40px;
+    }
+    .lookingfor__form {
+        padding: 80px 40px 60px;
+    }
+}
+@media (max-width: 1600px) {
+    .container {
+        width: 1350px;
+    }
+    .navbar {
+        padding: 30px 0;
+        &__center {
+            margin: 0 25px 0 45px;
+        }
+        &__item {
+            margin-right: 40px;
+        }
+    }
+    .header {
+        &__left {
+            margin-top: 95px;
+        }
+        &__title {
+            font-size: 6.9rem;
+        }
+        &__subtitle {
+            p {
+                font-size: 2.5rem;
+            }
+        }
+        &__icons {
+            margin-top:55px;
+            align-items: flex-start;
+        }
+        &__item {
+            width: 235px;
+            &_icon {
+                width: 170px;
+                height: 170px;
+            }
+        }
+        &__form {
+            width: 540px;
+            height: 550px;
+            padding: 60px 30px;
+        }
+    }
+    .about {
+        &__video {
+            
+        }
+    }
+}
+@media (max-width: 1400px) {}
+@media (max-width: 1200px) {}
 @media (max-width: 940px) {}
 @media (max-width: 764px) {}
 @media (max-width: 480px) {}

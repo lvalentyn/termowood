@@ -1,5 +1,12 @@
 /* Jquery */
 $(document).ready(function () {
+    // burger 
+    $('.burger').click(function () {
+        $('.burger, .navbar__menu').toggleClass('active');
+    });
+    // $('.navbar__logo, .navbar__item, .navbar__tel').click(function () {
+    //     $('.burger, .navbar__menu').removeClass('active');
+    // });
     // navmenu on scroll
     $(window).scroll(function () {
         if (this.scrollY > 40) {
@@ -54,7 +61,7 @@ $(document).ready(function () {
         arrows: true,
         speed: 2000,
         swipe: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         slidesToShow: 1,
         fade: true,

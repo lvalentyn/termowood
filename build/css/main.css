@@ -200,6 +200,78 @@ table {
       -ms-transform: scale(1);
           transform: scale(1); }
 
+@media (max-width: 1800px) {
+  .page .container {
+    width: 1550px; }
+  .page .about__video {
+    min-width: 820px; }
+  .page .lifestyle__gallery_block1 {
+    min-width: 470px; }
+  .page .lifestyle__gallery_block2 {
+    min-width: 600px; }
+  .page .lifestyle__gallery_block3 {
+    min-width: 324px; }
+  .page .infoblock__slides {
+    width: 600px; }
+  .page .infoblock__wrapper {
+    width: 800px;
+    margin-left: 20px; }
+  .page .infoblock__tab {
+    width: 260px; }
+  .page .infoblock__text {
+    padding: 57px 31px 50px; }
+  .page .infoblock__footer {
+    padding: 0px 31px; }
+    .page .infoblock__footer_text {
+      width: 346px; }
+  .page .reviews__slide_img {
+    width: 1050px; }
+  .page .footer__map {
+    width: 530px;
+    height: 530px; }
+  .page .btn.warranty__btn {
+    margin: 30px auto 0; }
+  .page .lookingfor__form, .page .footer__form {
+    width: 530px;
+    height: 530px;
+    padding: 60px 40px; }
+  .page .header__form {
+    width: 530px;
+    padding: 50px 40px; }
+  .page .lookingfor__form {
+    padding: 80px 40px 60px; } }
+
+@media (max-width: 1600px) {
+  .page .container {
+    width: 1350px; }
+  .page .navbar {
+    padding: 30px 0; }
+    .page .navbar__center {
+      margin: 0 25px 0 45px; }
+    .page .navbar__item {
+      margin-right: 40px; }
+  .page .header__left {
+    margin-top: 95px; }
+  .page .header__title {
+    font-size: 6.9rem; }
+  .page .header__subtitle p {
+    font-size: 2.5rem; }
+  .page .header__icons {
+    margin-top: 55px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .page .header__item {
+    width: 235px; }
+    .page .header__item_icon {
+      width: 170px;
+      height: 170px; }
+  .page .header__form {
+    width: 540px;
+    height: 550px;
+    padding: 60px 30px; } }
+
 html {
   font-size: 10px; }
 
@@ -801,7 +873,7 @@ body {
       line-height: 2rem; }
 
 .lifestyle {
-  padding: 131px 60px 113px;
+  padding: 131px 0px 113px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 16, 16, 0.87))), url(../img/bg/lifestylebg.jpg) center center/cover no-repeat;
   background: -o-linear-gradient(rgba(16, 16, 16, 0.87)), url(../img/bg/lifestylebg.jpg) center center/cover no-repeat;
   background: linear-gradient(rgba(16, 16, 16, 0.87)), url(../img/bg/lifestylebg.jpg) center center/cover no-repeat; }
