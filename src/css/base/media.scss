@@ -1177,7 +1177,7 @@
             &_block1 {
                 height: auto;
                 margin: 0;
-
+                min-width: 100%;
             }
             &_block2 {
                 min-width: 100%;
@@ -1187,6 +1187,7 @@
                 height: auto;
             }
             &_block3 {
+                width: 100%;
                 flex-direction: column;
                 height: auto;
             }
@@ -1466,11 +1467,165 @@
     }
 }
 @media (max-width: 413px) {
-    .header {
-        &__title {
-            color: red;
+    .container {
+        width: 300px;
+    }
+    .navbar {
+        .container {
         }
-        
+        &__logo {
+            min-width: auto;
+            max-width: 150px;
+            height: 30px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .header {
+        &__left {
+            margin-top: 0;
+        }
+        &__right {
+            margin-top: 20px;
+        }
+        &__title {
+            font-size: 2.5rem;
+        }
+        &__subtitle {
+            p {
+                font-size: 1.8rem;
+                margin-top: 10px;
+                &:last-child {
+                    font-size: 1.6rem;
+                    margin-top: 10px;
+                }
+            }
+        }
+        &__form {
+            width: 100%;
+            height: auto;
+            padding: 20px 15px;
+            &_title {
+                font-size: 1.4rem;
+            }
+            &_subtitle {
+                margin-top: 10px;
+                font-size: 1.3rem;
+            }
+            .form {
+                margin-top: 10px;
+            }
+        }
+        .btn.form__btn{
+            margin-top: 0px;
+            width: auto;
+            min-width: 90%;
+        }
+    }
+    .lookingfor {
+        &__form {
+            width: 100%;
+            height: auto;
+            padding: 20px 15px;
+            &_title {
+                font-size: 1.4rem;
+            }
+            &_subtitle {
+                margin-top: 10px;
+                font-size: 1.3rem;
+            }
+            .form {
+                margin-top: 10px;
+            }
+        }
+        .btn.form__btn{
+            margin-top: 0px;
+            width: auto;
+            min-width: 90%;
+        }
+    }
+    .infoblock {
+        &__title {
+            font-size: 2.6rem;
+            span {
+                font-size: 1.8rem;
+            }
+        }
+        &__slide {
+            height: 200px;
+        }
+        &__descr {
+            font-size: 1.4rem;
+        }
+        &__footer {
+            width: 100%;
+            margin: 0;
+            &_text {
+                margin: 0;
+               width: 100%; 
+               font-size: 1.4rem;
+            }
+        }
+    }
+    .warranty {
+        &__slide {
+            &_descr {
+                margin: 0;
+            }
+        }
+        .btn.warranty__btn {
+            min-width: 200px;
+            margin: 15px auto 0;
+        }
+    }
+    .reviews {
+        &__slider {
+            margin: 0 5px;
+        }
+        &__slide {
+            &_card{
+                width: 255px;
+               margin: 155px 20px 0 -270px; 
+            }
+            &_top {
+                flex-direction: column;
+                align-items: center;
+            }
+            &_photo {
+                margin: 0 0 10px;
+            }
+            &_name {
+                text-align: center;
+                span {
+                    margin: 0;
+                }
+            }
+            
+        }
+    }
+    .footer {
+        &__form {
+            width: 100%;
+            height: auto;
+            padding: 20px 15px;
+            &_title {
+                font-size: 1.4rem;
+            }
+            &_subtitle {
+                margin-top: 10px;
+                font-size: 1.3rem;
+            }
+            .form {
+                margin-top: 10px;
+            }
+        }
+        .btn.form__btn{
+            margin-top: 0px;
+            width: auto;
+            min-width: 90%;
+        }
     }
 }
 }
