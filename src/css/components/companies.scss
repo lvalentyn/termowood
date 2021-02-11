@@ -2,19 +2,15 @@
     padding: 108px 0 101px;
     background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/companiesbg.jpg) center center/cover no-repeat;
     &__title {
-        margin-bottom: 118px;
+        margin-bottom: 50px;
         font-weight: 500;
         font-size: 4.2rem;
         text-align: center;
         text-transform: uppercase;
     }
     &__slider {
-        width: 1100px;
-        margin: 0 auto;
-        padding-bottom: 120px;
-        display: block;
+        padding: 0 0px 100px;
         position: relative;
-        overflow: hidden;
         .my-slick-prev {
             position: absolute;
             bottom: 0;
@@ -86,28 +82,33 @@
                 }
             }
         }
-        &_item {
-            width: 151.5px;
-            height: 151.5px;
-            margin: 0 20px;
-            &.slick-active {
-                opacity: .5;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                img {
-                    width: 85%;
-                    height: 85%;
-                    transition: all .2s ease;
-                }
+    }
+    &__slide {
+        transition: all .2 ease;
+        &.slick-slide {
+            opacity: .5;
+            width: 100px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .2 ease;
+            img {
+                width: 100px;
+                height: 100px;
             }
-            &.slick-center {
-                opacity: 1;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    transition: all .2s ease;
-                }
+        }
+        &.slick-center {
+            opacity: 1;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .2 ease;
+            img {
+                width: 151.5px;
+                height: 151.5px;
             }
         }
     }

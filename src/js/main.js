@@ -32,17 +32,31 @@ $(document).ready(function () {
     });
     $('.companies__slider').slick({
         centerMode: true,
-        centerPadding: '10px',
+        centerPadding: '11px',
         slidesToShow: 5,
         infinite: true,
         dots: false,
         arrows: true,
         speed: 2000,
         swipe: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
     $('.warranty__slider').slick({
         infinite: true,
@@ -82,7 +96,7 @@ $(document).ready(function () {
         arrows: true,
         speed: 2000,
         swipe: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         slidesToShow: 1,
         fade: true,
