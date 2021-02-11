@@ -1,11 +1,12 @@
 /* Jquery */
 $(document).ready(function () {
     // burger 
+    const brg = document.querySelector('.burger');
     $('.burger').click(function () {
-        $('.burger, .navbar__menu').toggleClass('active');
+        $('.burger, .navbar__center').toggleClass('active');
     });
-    // $('.navbar__logo, .navbar__item, .navbar__tel').click(function () {
-    //     $('.burger, .navbar__menu').removeClass('active');
+    // $('.burger, .navbar__center').click(function () {
+    //     $('.burger, .navbar__center').removeClass('active');
     // });
     // navmenu on scroll
     $(window).scroll(function () {
@@ -62,7 +63,13 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 100,
                 settings: {
                     arrows: false,
                     centerMode: true,
