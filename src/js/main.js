@@ -18,8 +18,9 @@ $(document).ready(function () {
         }
     });
     // lightgallery
-    lightGallery(document.querySelector('.lifestyle__gallery_block1,.lifestyle__gallery_block2,.lifestyle__gallery_block3'));
-
+    lightGallery(document.querySelector('.lifestyle__gallery_block1'));
+    lightGallery(document.querySelector('.lifestyle__gallery_block2'));
+    lightGallery(document.querySelector('.lifestyle__gallery_block3'));
     // slick-sliders
     $('.infoblock__slider').slick({
         slidesToShow: 1,
