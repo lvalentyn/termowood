@@ -892,6 +892,28 @@ table {
               order: 3; }
       .page .lifestyle__gallery_block3 .lifestyle__gallery_photo:first-child {
         margin-right: 20px; }
+    .page .lifestyle__gallery .lifestyle__gallery_photo:hover {
+      display: none; }
+    .page .lifestyle__gallery .lifestyle__gallery_photo img {
+      -webkit-filter: drop-shadow(5px 5px 15px #000000) brightness(70%);
+              filter: drop-shadow(5px 5px 15px #000000) brightness(70%);
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease; }
+    .page .lifestyle__gallery .lifestyle__gallery_photo::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -30%);
+          -ms-transform: translate(-50%, -30%);
+              transform: translate(-50%, -30%);
+      width: 56px;
+      height: 56px;
+      background: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5 43.5C34.098 43.5 43.5 34.098 43.5 22.5C43.5 10.902 34.098 1.5 22.5 1.5C10.902 1.5 1.5 10.902 1.5 22.5C1.5 34.098 10.902 43.5 22.5 43.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M38.25 38.25L50.5 50.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.5 22.5H29.5M22.5 15.5V29.5V15.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") center center/contain no-repeat;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease; }
   .page .comprehensive__title {
     font-size: 3rem; }
   .page .infoblock {
@@ -1119,28 +1141,6 @@ table {
   .page .lifestyle .lifestyle__gallery_photo {
     margin-top: 20px;
     height: 250px; }
-    .page .lifestyle .lifestyle__gallery_photo:hover {
-      display: none; }
-    .page .lifestyle .lifestyle__gallery_photo img {
-      -webkit-filter: drop-shadow(5px 5px 15px #000000) brightness(70%);
-              filter: drop-shadow(5px 5px 15px #000000) brightness(70%);
-      -webkit-transition: all .2s ease;
-      -o-transition: all .2s ease;
-      transition: all .2s ease; }
-    .page .lifestyle .lifestyle__gallery_photo::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -30%);
-          -ms-transform: translate(-50%, -30%);
-              transform: translate(-50%, -30%);
-      width: 56px;
-      height: 56px;
-      background: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5 43.5C34.098 43.5 43.5 34.098 43.5 22.5C43.5 10.902 34.098 1.5 22.5 1.5C10.902 1.5 1.5 10.902 1.5 22.5C1.5 34.098 10.902 43.5 22.5 43.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M38.25 38.25L50.5 50.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.5 22.5H29.5M22.5 15.5V29.5V15.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") center center/contain no-repeat;
-      -webkit-transition: all .2s ease;
-      -o-transition: all .2s ease;
-      transition: all .2s ease; }
   .page .infoblock {
     padding: 20px 15px; }
     .page .infoblock__slider {
