@@ -1110,6 +1110,9 @@ table {
     margin-top: 20px; }
     .page .header__subtitle p:last-child {
       margin: 15px 0 0; }
+  .page .about__title {
+    margin-left: 0;
+    font-size: 2.6rem; }
   .page .about__video {
     min-width: auto;
     height: 300px;
@@ -1281,12 +1284,11 @@ table {
     text-align: center; }
   .page .reviews__slider .my-slick-next {
     bottom: auto;
-    left: auto;
-    top: -70px;
-    right: 60px; }
+    top: 20px;
+    left: 20px; }
   .page .reviews__slider .my-slick-prev {
-    top: -70px;
     bottom: auto;
+    top: 80px;
     left: 20px; }
   .page .reviews__slide {
     height: auto; }
@@ -1335,8 +1337,7 @@ table {
     margin: 40px 0 0;
     padding: 20px; }
   .page .about__title {
-    font-size: 2.2rem;
-    margin-left: -40px; }
+    font-size: 2.2rem; }
   .page .about__text {
     font-size: 1.4rem; }
   .page .lifestyle .container {
@@ -1413,15 +1414,6 @@ table {
     line-height: 3.2rem; }
   .page .reviews__slider {
     margin: 0 5px; }
-    .page .reviews__slider .my-slick-next {
-      bottom: auto;
-      left: auto;
-      top: -70px;
-      right: 30px; }
-    .page .reviews__slider .my-slick-prev {
-      top: -70px;
-      bottom: auto;
-      left: 20px; }
   .page .reviews__slide_card {
     margin: 155px 20px 0 -352px; }
   .page .footer .container {
@@ -3070,7 +3062,7 @@ body {
       transition: all .2s ease; }
     .infoblock__tab.active {
       background: #EBE26B;
-      border: 1px solid transparent; }
+      border: 2px solid #292929; }
   .infoblock__text {
     padding: 77px 51px 70px; }
   .infoblock__descr {

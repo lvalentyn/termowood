@@ -1227,6 +1227,10 @@
         }
     }
     .about {
+        &__title {
+            margin-left: 0;
+            font-size: 2.6rem;
+        }
         &__video {
             min-width: auto;
             height: 300px;
@@ -1386,18 +1390,16 @@
         &__slider {
             .my-slick-next {
                 bottom: auto;
-                left: auto;
-                top: -70px;
-                right: 60px;
+                top: 20px;
+                left: 20px;
             }
             .my-slick-prev {
-                top: -70px;
                 bottom: auto;
+                top: 80px;
                 left: 20px;
             }
         }
         &__slide {
-            
             height: auto;
             &_img {
                 height: 400px;
@@ -1447,7 +1449,6 @@
         }
         &__title {
             font-size: 2.2rem;
-            margin-left: -40px;
         }
         &__text {
             font-size: 1.4rem;
@@ -1583,17 +1584,6 @@
         }
         &__slider {
             margin: 0 5px;
-            .my-slick-next {
-                bottom: auto;
-                left: auto;
-                top: -70px;
-                right: 30px;
-            }
-            .my-slick-prev {
-                top: -70px;
-                bottom: auto;
-                left: 20px;
-            }
         }
         &__slide {
             &_card {
