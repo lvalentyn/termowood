@@ -1,3 +1,4 @@
+
 /* Jquery */
 $(document).ready(function () {
     // burger 
@@ -16,6 +17,9 @@ $(document).ready(function () {
             $('.navbar').removeClass('sticky');
         }
     });
+    // lightgallery
+    lightGallery(document.querySelector('.lifestyle__gallery_block1,.lifestyle__gallery_block2,.lifestyle__gallery_block3'));
+
     // slick-sliders
     $('.infoblock__slider').slick({
         slidesToShow: 1,
@@ -25,7 +29,8 @@ $(document).ready(function () {
         speed: 2000,
         swipe: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        pauseOnHover: false,
+        autoplaySpeed: 2000,
         fade: true,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>'
@@ -39,8 +44,9 @@ $(document).ready(function () {
         arrows: true,
         speed: 2000,
         swipe: true,
-        autoplay: false,
-        autoplaySpeed: 5000,
+        pauseOnHover: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>',
         responsive: [
@@ -65,7 +71,8 @@ $(document).ready(function () {
         speed: 2000,
         swipe: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 2000,
+        pauseOnHover: false,
         slidesToShow: 4,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>',
@@ -96,8 +103,9 @@ $(document).ready(function () {
         arrows: true,
         speed: 2000,
         swipe: true,
+        pauseOnHover: false,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 2000,
         slidesToShow: 1,
         fade: true,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',

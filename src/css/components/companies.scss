@@ -84,6 +84,7 @@
         }
     }
     &__slide {
+        outline: none;
         transition: all .2 ease;
         &.slick-slide {
             opacity: .5;

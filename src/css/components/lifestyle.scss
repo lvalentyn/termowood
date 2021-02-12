@@ -54,11 +54,15 @@
             }
         }
         &_photo {
+            overflow: hidden;
             img{
                 border-radius: 30px;
-                width: 100%;
-                height: 100%;
                 transition: all .2s ease;
+                height: inherit;
+                position: absolute;
+                width: inherit;
+                top: 50%;
+                transform: translateY(-50%);
             }
             &:hover {
                 img {

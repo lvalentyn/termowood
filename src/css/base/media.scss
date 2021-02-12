@@ -3,6 +3,11 @@
     .container {
         width: 1550px;
     }
+    .header {
+        .container {
+            padding: 200px 0 140px;
+        }
+    }
     .about {
         &__video {
             min-width: 820px;
@@ -17,7 +22,7 @@
                 min-width: 600px;
             }
             &_block3 {
-                min-width: 324px;
+                min-width: 400px;
             }
         }
     }
@@ -30,7 +35,8 @@
             margin-left: 20px;
         }
         &__tab {
-            width: 260px;
+            padding: 15px 10px;
+            font-size: 1.6rem;
         }
         &__text {
             padding: 57px 31px 50px;
@@ -90,9 +96,6 @@
         }
     }
     .header {
-        &__left {
-            margin-top: 95px;
-        }
         &__title {
             font-size: 6.9rem;
         }
@@ -161,20 +164,20 @@
         &__gallery {
             margin-top: 60px;
             &_block1 {
-                min-width: 370px;
+                min-width: 400px;
                 height: 668px;
                 margin-right: 20px;
             }
             &_block2 {
                 margin-right: 20px;
-                min-width: 500px;
+                min-width: 550px;
                 height: 668px;
                 .lifestyle__gallery_photo {
                     height: 324px;
                 }
             }
             &_block3 {
-                min-width: 224px;
+                min-width: 324px;
                 height: 668px;
                 .lifestyle__gallery_photo {
                     height: 324px;
@@ -208,13 +211,12 @@
         &__slide {
             height: 430px;
         }
+        &__tab {
+            padding: 15px 0px;
+            font-size: 1.4rem;
+        }
         &__wrapper {
             width: 700px;
-        }
-        &__tab {
-            width: 220px;
-            height: 40px;
-            font-size: 1.6rem;
         }
         &__text {
             padding: 40px 30px;
@@ -460,6 +462,9 @@
         
     }
     .header {
+        .container {
+            padding: 150px 0 100px;
+        }
         &__title {
             font-size: 5rem;
         }
@@ -527,6 +532,15 @@
     }
     .lifestyle {
         &__gallery {
+            &_block1 {
+                min-width: 350px;
+            }
+            &_block2 {
+                min-width:500px;
+            }
+            &_block3 {
+                min-width: 274px;
+            }
             &_photo {
                 &:hover {
                     &::after {
@@ -535,6 +549,7 @@
                     }
                 }
             }
+            
         }
     }
     .infoblock {
@@ -546,10 +561,6 @@
         }
         &__wrapper {
             width: 595px;
-        }
-        &__tab {
-            width: 195px;
-            font-size: 1.4rem;
         }
         .btn.infoblock__btn {
             min-width: 200px;
@@ -735,6 +746,9 @@
             width: 100%;
             padding: 15px 30px;
         }
+        .btn {
+            margin-left: auto;
+        }
         &__center {
             margin: 0;
             padding: 0;
@@ -822,9 +836,11 @@
         }
     }
     .header {
+        .container {
+            padding: 130px 0 80px;
+        }
         &__left {
             max-width: 500px;
-            margin-top: 50px;
         }
         &__title {
             font-size: 3.3rem;
@@ -861,7 +877,11 @@
             width: 100%;
         }
         &__info {
-            margin: 50px -240px 0 50px;
+            margin: 40px 0 0;
+            padding: 20px 40px 24px;
+        }
+        &__title {
+            margin-left: -55px;
         }
     }
     .lifestyle {
@@ -871,7 +891,6 @@
         &__gallery {
             flex-direction: column;
             &_block1 {
-                
                 margin: 0 0 20px;
                 height: 324px;
                 order: 2;
@@ -921,9 +940,6 @@
         }
         &__tabs {
             justify-content: center;
-        }
-        &__tab {
-            margin: 0 10px;
         }
         &__text {
             height: auto;
@@ -1037,12 +1053,6 @@
         width: 720px;
     }
     .header {
-        &__left {
-            margin: 0;
-        }
-        &__right {
-            margin-top: 40px;
-        }
         &__title {
             margin-bottom: 20px;
         }
@@ -1097,10 +1107,11 @@
             align-items: flex-start;
         }
         &__left {
-            margin-top: 60px;
+            margin: 60px 15px 0 0;
         }
         &__title {
         font-size: 2.8rem;
+        line-height: 3.5rem;
         }
         &__subtitle {
             font-size: 2rem;
@@ -1173,9 +1184,15 @@
     }
     .header {
         .container {
-            padding:  50px 0 0;
+            padding: 80px 0 40px;
             flex-direction: column;
             justify-content: center;
+        }
+        &__left {
+            text-align: center;
+        }
+        &__right {
+            margin: 30px auto 0;
         }
         &__title {
             margin: 0;
@@ -1220,6 +1237,24 @@
         .lifestyle__gallery_photo {
             margin-top: 20px;
             height: 250px;
+            &:hover {
+                display: none;
+            }
+            img {
+                filter: drop-shadow(5px 5px 15px #000000) brightness(70%);
+                transition: all .2s ease;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -30%);
+                width: 56px;
+                height: 56px;
+                background: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5 43.5C34.098 43.5 43.5 34.098 43.5 22.5C43.5 10.902 34.098 1.5 22.5 1.5C10.902 1.5 1.5 10.902 1.5 22.5C1.5 34.098 10.902 43.5 22.5 43.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M38.25 38.25L50.5 50.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.5 22.5H29.5M22.5 15.5V29.5V15.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") center center/contain no-repeat;
+                transition: all .2s ease;
+            }
         }
     }
     .infoblock {
@@ -1235,12 +1270,18 @@
                 margin: 0;
             }
         }
-        &__tab {
-            text-align: center;
-            width: 215px;
-            margin: 0 5px;
-            font-size: 1.4rem;
-        }
+        &__tabs {
+            display: flex;
+            flex-direction: column;
+            }
+            &__tab {
+                width: 100%;
+                margin: 0 0 5px;
+                font-size: 1.4rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         &__wrapper {
             margin-top: 20px;
         }
@@ -1262,16 +1303,25 @@
             margin: 0;
         }
         &__item {
-            width: 250px;
+            width: 100%;
             margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             &_icon {
-                width: 200px;
-                height: 200px;
+               min-width: 150px;
+               height: 150px;
+            }
+            &_text {
+                margin-left: 20px;
             }
             &_title {
+                margin: 0;
+                text-align: left;
                 font-size: 2rem;
             }
             &_subtitle {
+                text-align: left;
                 font-size: 1.8rem;
             }
         }
@@ -1283,6 +1333,7 @@
         }
         &__left {
             margin: 0 0 40px;
+            text-align: center;
         }
     }
     .products {
@@ -1292,16 +1343,25 @@
             margin: 0;
         }
         &__item {
-            width: 250px;
+            width: 100%;
             margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             &_icon {
-                width: 200px;
-                height: 200px;
+                min-width: 150px;
+               height: 150px;
+            }
+            &_text {
+                margin-left: 20px;
             }
             &_title {
+                margin: 0;
+                text-align: left;
                 font-size: 2rem;
             }
             &_subtitle {
+                text-align: left;
                 font-size: 1.8rem;
             }
         }
@@ -1318,15 +1378,19 @@
         margin: 50px auto 0;
     }
     .reviews {
+        &__title {
+            text-align: center;
+        }
         &__slider {
             .my-slick-next {
-                top: 80px;
-                bottom: 0;
-                left: 20px;
+                bottom: auto;
+                left: auto;
+                top: -70px;
+                right: 60px;
             }
             .my-slick-prev {
-                top: 20px;
-                bottom: 0;
+                top: -70px;
+                bottom: auto;
                 left: 20px;
             }
         }
@@ -1374,19 +1438,14 @@
     .container {
         width: 372px;
     }
-    .header {
-        &__left {
-            margin-top: 50px;
-        }
-    }
     .about {
         &__info {
-            margin: 30px -240px 0 30px;
-            padding: 20px 235px 24px 20px;
+            margin: 40px 0 0;
+            padding: 20px;
         }
         &__title {
-            font-size: 2.5rem;
-            margin-left: -50px;
+            font-size: 2.2rem;
+            margin-left: -40px;
         }
         &__text {
             font-size: 1.4rem;
@@ -1415,23 +1474,38 @@
             padding: 30px 0;
         }
         &__title {
-            
             font-size: 2.4rem;
             line-height: 3.2rem;
         }
         &__item{
             &_icon {
-                width: 150px;
-                height: 150px;
+                width: 100px;
+                height: 100px;
+                svg {
+                    width: 40%;
+                }
+            }
+            &_text {
+                margin-left: 0px;
+            }
+            &_title {
+                font-size: 1.6rem;
+            }
+            &_subtitle {
+                margin-top: 10px;
+                font-size: 1.4rem;
             }
         }
     }
     .infoblock {
-        &__tab {
-            font-size: 1.2rem;
-        }
+        
         &__text {
             padding: 30px 10px;
+        }
+        &__footer {
+            &_text {
+                margin: 0;
+            }
         }
     }
     .products {
@@ -1444,8 +1518,21 @@
         }
         &__item{
             &_icon {
-                width: 150px;
-                height: 150px;
+                width: 100px;
+                height: 100px;
+                svg {
+                    width: 30%;
+                }
+            }
+            &_text {
+                margin-left: 0px;
+            }
+            &_title {
+                font-size: 1.6rem;
+            }
+            &_subtitle {
+                margin-top: 10px;
+                font-size: 1.4rem;
             }
         }
     }
@@ -1457,6 +1544,7 @@
           
             font-size: 2.4rem;
         }
+        
     }
     .warranty {
         .container {
@@ -1493,6 +1581,17 @@
         }
         &__slider {
             margin: 0 5px;
+            .my-slick-next {
+                bottom: auto;
+                left: auto;
+                top: -70px;
+                right: 30px;
+            }
+            .my-slick-prev {
+                top: -70px;
+                bottom: auto;
+                left: 20px;
+            }
         }
         &__slide {
             &_card {
@@ -1569,6 +1668,20 @@
             width: auto;
             min-width: 90%;
         }
+    }
+    .about {
+        &__info {
+            margin: 40px 0 0;
+            padding: 20px;
+        }
+        &__title {
+            font-size: 2rem;
+            margin-left: 0px;
+        }
+        &__text {
+            margin-top: 10px;
+        }
+        
     }
     .lookingfor {
         &__form {
