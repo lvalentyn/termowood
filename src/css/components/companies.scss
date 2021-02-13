@@ -85,7 +85,6 @@
     }
     &__slide {
         outline: none;
-        transition: all .2 ease;
         &.slick-slide {
             opacity: .5;
             width: 100px;
@@ -93,10 +92,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: all .2 ease;
             img {
-                width: 100px;
-                height: 100px;
+                // width: 100px;
+                // height: 100px;
+                transform: scale(.6);
+                transition: all .5s ease;
             }
         }
         &.slick-center {
@@ -106,10 +106,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: all .2 ease;
             img {
-                width: 151.5px;
-                height: 151.5px;
+                transform: scale(1);
+                transition: all .5s ease;
             }
         }
     }
