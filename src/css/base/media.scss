@@ -1447,7 +1447,7 @@
 }
 @media (max-width: 480px) {
     .container {
-        width: 372px;
+        width: 360px;
     }
     .about {
         &__info {
@@ -1575,6 +1575,9 @@
 
             }
         }
+        &__slide {
+            height: 650px;
+        }
     }
     .btn.warranty__btn {
         min-width: 250px;
@@ -1609,7 +1612,7 @@
         }
     }
 }
-@media (max-width: 413px) {
+@media (max-width: 380px) {
     .container {
         width: 300px;
     }

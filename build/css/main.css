@@ -1334,7 +1334,7 @@ table {
 
 @media (max-width: 480px) {
   .page .container {
-    width: 372px; }
+    width: 360px; }
   .page .about__info {
     margin: 40px 0 0;
     padding: 20px; }
@@ -1405,6 +1405,8 @@ table {
   .page .warranty__slider .my-slick-next {
     top: 15px;
     right: 30%; }
+  .page .warranty__slide {
+    height: 650px; }
   .page .btn.warranty__btn {
     min-width: 250px; }
   .page .reviews .container {
@@ -1424,7 +1426,7 @@ table {
   .page .footer__map {
     margin: 0; } }
 
-@media (max-width: 413px) {
+@media (max-width: 380px) {
   .page .container {
     width: 300px; }
   .page .navbar__logo {
