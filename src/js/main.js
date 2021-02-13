@@ -52,7 +52,7 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="my-slick-next"></button>',
         responsive: [
             {
-                breakpoint: 1200,
+                breakpoint: 1280,
                 settings: {
                     slidesToShow: 3
                 }
@@ -85,15 +85,16 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 1200,
+                breakpoint: 1280,
                 settings: {
                     slidesToShow: 2
                 }
             },
             {
-                breakpoint: 764,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    fade: true
                 }
             }
         ]

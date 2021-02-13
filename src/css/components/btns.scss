@@ -42,8 +42,11 @@
         height: 49.13px;
     }
     &.warranty__btn {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
         display: block;
-        margin: 60px auto 0;
         min-width: 305px;
         height: 49.13px;
     }
