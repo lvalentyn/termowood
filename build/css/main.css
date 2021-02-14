@@ -1438,7 +1438,7 @@ table {
       top: 20px;
       left: 80px; }
   .page .reviews__slide {
-    height: 500px; }
+    height: 600px; }
     .page .reviews__slide_text {
       overflow: scroll; }
     .page .reviews__slide_card {
@@ -1533,7 +1533,7 @@ table {
     min-width: 200px; }
   .page .reviews__slide_card {
     width: 255px;
-    margin: 155px 20px 0 -270px; }
+    margin: 105px 20px 0 -270px; }
   .page .reviews__slide_top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
