@@ -2239,16 +2239,15 @@ body {
       overflow: hidden; }
       .lifestyle__gallery_photo img {
         border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: 50% 50%;
+           object-position: 50% 50%;
         -webkit-transition: all .2s ease;
         -o-transition: all .2s ease;
-        transition: all .2s ease;
-        height: inherit;
-        position: absolute;
-        width: inherit;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%); }
+        transition: all .2s ease; }
       .lifestyle__gallery_photo:hover img {
         -webkit-filter: drop-shadow(5px 5px 15px #000000) brightness(70%);
                 filter: drop-shadow(5px 5px 15px #000000) brightness(70%);
@@ -2713,12 +2712,15 @@ body {
       border-top-right-radius: 30px; }
       .warranty__slide_img img {
         position: absolute;
-        width: inherit;
-        height: inherit;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%); }
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: 50% 50%;
+           object-position: 50% 50%;
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease; }
     .warranty__slide_text {
       height: 467px;
       color: #292929;
@@ -3011,12 +3013,15 @@ body {
     outline: none; }
     .infoblock__slide img {
       position: absolute;
-      width: inherit;
-      height: inherit;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%); }
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: 50% 50%;
+         object-position: 50% 50%;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease; }
     .infoblock__slide::after {
       content: '';
       position: absolute;
