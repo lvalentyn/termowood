@@ -226,9 +226,11 @@ table {
   .page .infoblock__footer {
     padding: 0px 31px; }
     .page .infoblock__footer_text {
-      width: 346px; }
+      width: 358px; }
   .page .reviews__slide_img {
     width: 1050px; }
+  .page .footer__wrapper {
+    margin-right: 45px; }
   .page .footer__map {
     width: 530px;
     height: 530px; }
@@ -353,7 +355,7 @@ table {
     .page .infoblock__footer {
       padding: 0px 30px; }
       .page .infoblock__footer_text {
-        width: 307px;
+        width: 318px;
         font-size: 1.6rem;
         line-height: 2.2rem; }
   .page .advantages {
@@ -454,16 +456,14 @@ table {
       padding: 60px 0; }
     .page .warranty__title {
       font-size: 3.8rem; }
-    .page .warranty__slide {
-      height: 600px; }
-      .page .warranty__slide_img {
-        height: 200px; }
-      .page .warranty__slide_text {
-        padding: 10px 20px 68px 20px; }
-      .page .warranty__slide_info {
-        margin-top: 20px; }
-      .page .warranty__slide_descr {
-        margin-top: 10px; }
+    .page .warranty__slide_img {
+      height: 200px; }
+    .page .warranty__slide_text {
+      padding: 10px 20px 68px 20px; }
+    .page .warranty__slide_info {
+      margin-top: 20px; }
+    .page .warranty__slide_descr {
+      margin-top: 10px; }
   .page .reviews {
     padding: 0; }
     .page .reviews .container {
@@ -496,12 +496,13 @@ table {
       font-size: 3.8rem;
       margin-bottom: 30px; }
     .page .footer__wrapper {
-      margin-right: 80px; }
+      margin-right: 40px; }
     .page .footer__address {
       margin: 16px 0 40px; }
     .page .footer__links {
       margin-top: 35px; }
     .page .footer__map {
+      margin-right: 40px;
       width: 500px;
       height: 500px; }
     .page .footer__form {
@@ -1010,7 +1011,8 @@ table {
     height: 444px; }
   .page .footer__map {
     width: 100%;
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-right: 0; }
   .page .footer__form {
     margin: 0 0 0 -372px; } }
 
@@ -1337,6 +1339,10 @@ table {
 @media (max-width: 480px) {
   .page .container {
     width: 360px; }
+  .page .header {
+    background: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0))), url(../img/bg/headerbg.jpg) center center/cover no-repeat;
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0) 100%), url(../img/bg/headerbg.jpg) center center/cover no-repeat;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0) 100%), url(../img/bg/headerbg.jpg) center center/cover no-repeat; }
   .page .about__info {
     margin: 40px 0 0;
     padding: 20px; }
@@ -1611,9 +1617,7 @@ body {
   height: 601px;
   min-width: 1094px;
   min-height: 601px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(30, 29, 25, 0.74)), to(rgba(30, 29, 25, 0.74))), url(../img/bg/aboutbg.jpg) center center/cover no-repeat;
-  background: -o-linear-gradient(bottom, rgba(30, 29, 25, 0.74), rgba(30, 29, 25, 0.74)), url(../img/bg/aboutbg.jpg) center center/cover no-repeat;
-  background: linear-gradient(0deg, rgba(30, 29, 25, 0.74), rgba(30, 29, 25, 0.74)), url(../img/bg/aboutbg.jpg) center center/cover no-repeat;
+  background: url(../img/bg/aboutbg.jpg) center center/cover no-repeat;
   border-radius: 27px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2696,7 +2700,6 @@ body {
   .warranty__slide {
     margin: 0 20px 30px;
     width: 420px;
-    height: 767px;
     padding-bottom: 30px;
     border-radius: 30px;
     background: #F7F7F7;
@@ -2902,6 +2905,10 @@ body {
   .lookingfor__form_subtitle {
     margin: 0 auto 90px; }
 
+.header__form {
+  width: 500px;
+  padding: 45px 30px 90px; }
+
 .blocks {
   padding: 60px 0 131px; }
 
@@ -2926,6 +2933,7 @@ body {
   .infoblock__title {
     font-size: 3.6rem;
     text-align: center;
+    font-weight: 700;
     color: #292929; }
     .infoblock__title span {
       font-size: 2.4rem; }
@@ -3110,6 +3118,7 @@ body {
     padding: 0px 51px; }
     .infoblock__footer_text {
       width: 472px;
+      font-weight: 600;
       font-size: 1.8rem;
       line-height: 2.7rem;
       text-align: right;

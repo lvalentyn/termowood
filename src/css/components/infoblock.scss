@@ -8,7 +8,6 @@
     background: #F7F7F7;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
     border-radius: 31px;
-
     display: flex;
     justify-content: space-between;
     &__slides {
@@ -17,6 +16,7 @@
     &__title {
         font-size: 3.6rem;
         text-align: center;
+        font-weight: 700;
         color: #292929;
         span {
             font-size: 2.4rem;
@@ -34,16 +34,13 @@
             right: 100px;
             width: 50px;
             height: 50px;
-            
             background-color: inherit;
             border: 2px solid #E0B76E;
             border-radius: 100%;
-
             z-index: 10;
             outline: none;
             cursor: pointer;
             transition: all .2s ease;
-
             &::before {
                 content: '';
                 position: absolute;
@@ -69,16 +66,13 @@
             right: 24px;
             width: 50px;
             height: 50px;
-
             background-color: inherit;
             border: 2px solid #E0B76E;
             border-radius: 100%;
-
             z-index: 10;
             outline: none;
             cursor: pointer;
             transition: all .2s ease;
-
             &::before {
                 content: '';
                 position: absolute;
@@ -184,6 +178,7 @@
         padding: 0px 51px;
         &_text {
             width: 472px;
+            font-weight: 600;
             font-size: 1.8rem;
             line-height: 2.7rem;
             text-align: right;

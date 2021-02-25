@@ -3,7 +3,6 @@
 @import "base/fonts";
 @import "base/animations";
 @import "base/media";
-
 html {
     font-size: 10px;
 }
@@ -28,7 +27,6 @@ body {
 * {
     box-sizing: border-box;
 }
-
 @import "components/about";
 @import "components/advantages";
 @import "components/btns";

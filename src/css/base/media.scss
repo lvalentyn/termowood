@@ -44,7 +44,7 @@
         &__footer {
             padding: 0px 31px;
             &_text {
-                width: 346px;
+                width: 358px;
             }
         }
     }
@@ -56,6 +56,9 @@
         }
     }
     .footer {
+        &__wrapper {
+            margin-right: 45px;
+        }
         &__map {
             width: 530px;
             height: 530px;
@@ -229,7 +232,7 @@
         &__footer {
             padding: 0px 30px;
             &_text {
-                width: 307px;
+                width: 318px;
                 font-size: 1.6rem;
                 line-height: 2.2rem;
             }
@@ -346,7 +349,7 @@
             }
         }
     }
-    .warranty {
+    .warranty { 
         padding: 0;
         .container {
             padding: 60px 0;
@@ -355,7 +358,7 @@
             font-size: 3.8rem;
         }
         &__slide {
-            height: 600px;
+            // height: 600px;
             &_img {
                 height: 200px;
             }
@@ -413,7 +416,7 @@
             margin-bottom: 30px;
         }
         &__wrapper {
-            margin-right: 80px;
+            margin-right: 40px;
         }
         &__address {
             margin: 16px 0 40px;
@@ -422,6 +425,7 @@
             margin-top: 35px;
         }
         &__map {
+            margin-right: 40px;
             width: 500px;
             height: 500px;
         }
@@ -1075,6 +1079,7 @@
         &__map {
             width: 100%;
             margin-top: 40px;
+            margin-right: 0;
         }
         &__form {
             margin: 0 0 0 -372px;
@@ -1453,6 +1458,9 @@
     .container {
         width: 360px;
     }
+    .header{ 
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0) 100%), url(../img/bg/headerbg.jpg) center center/cover no-repeat;
+        }
     .about {
         &__info {
             margin: 40px 0 0;
