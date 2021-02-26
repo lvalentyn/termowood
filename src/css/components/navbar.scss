@@ -53,6 +53,9 @@
     &__contacts {
         font-weight: 500;
         text-align: right;
+        .footer__address {
+            display: none;
+        }
         a {
             color: #EBE26B;
             font-size: 2.1rem;
@@ -79,6 +82,9 @@
             color: #EBE26B;
             font-size: 1.4rem;
         }
+    }
+    .footer__soc_item {
+        display: none;
     }
     &.sticky {
         padding: 15px 0;

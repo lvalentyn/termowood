@@ -738,6 +738,15 @@
             }
         }
     }
+    .modal {
+        & .header__form {
+            padding: 40px 20px;
+            min-height: 580px;
+        }
+        &__logo {
+            margin: 0 auto 40px;
+        }
+    }
 }
 @media (max-width: 1280px) {
     .container {
@@ -757,7 +766,7 @@
         }
         &__center {
             margin: 0;
-            padding: 0;
+            padding: 0 60px 70px;
             position: absolute;
             display: flex;
             flex-direction: column;
@@ -775,15 +784,30 @@
         &__menu {
             display: flex;
             flex-direction: column;
+            align-items: center;
             margin-top: 150px;
-            margin-left: -100px;
         }
         &__item {
+            margin-right: 0;
             margin-bottom: 20px;
             font-size: 1.8rem;
         }
         &__contacts {
-            margin-bottom: 20px;
+            text-align: center;
+            margin-top: auto;
+            div {
+                display: none;
+            }
+        }
+        .footer__address {
+            display: block;
+            margin-top: 10px;
+            line-height: 2.2rem;
+        }
+        .footer__soc_item {
+            display: block;
+            path {
+                fill: #ebe26b; }
         }
         &__center.active {
             opacity: 1;
@@ -1089,6 +1113,11 @@
 @media (max-width: 1024px) {
     .container {
         width: 740px;
+    }
+    .navbar {
+        &__center {
+            padding: 0 20px 70px;
+        }
     }
     .header {
         &__title {
@@ -1453,6 +1482,16 @@
             height: 300px;
         }
     }
+    .modal {
+        &__close {
+            top: 15px;
+            right: 10px;
+        }
+        &_mini {
+            min-width: 80%;
+            padding: 20px 30px;
+        }
+    }
 }
 @media (max-width: 480px) {
     .container {
@@ -1641,6 +1680,11 @@
             margin: 0;
         }
     }
+    .modal {
+        &_mini {
+            padding: 20px 35px;
+        }
+    }
 }
 @media (max-width: 380px) {
     .container {
@@ -1813,6 +1857,32 @@
             margin-top: 0px;
             width: auto;
             min-width: 90%;
+        }
+    }
+    .modal {
+        .header__form {
+            width: 100%;
+            min-height: 500px;
+        }
+        &__logo {
+            transform: scale(.8);
+            margin-bottom: 30px;
+        }
+        .header__form {
+            form {
+                margin-top: 20px;
+                input {
+                    width: 100%;
+                }
+                .form__btn {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+            }
+        }
+        &_mini {
+            min-width: 90%;
+            padding: 20px 30px;
         }
     }
 }

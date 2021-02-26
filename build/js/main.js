@@ -127,6 +127,40 @@ $(document).ready(function () {
             .addClass('active')
             .siblings().removeClass('active');
     });
+    // modal
+
+    // header btns
+    $('.infoblock__btn, .nav__btn').on('click', function () {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function () {
+        $('.overlay, #consultation, #thanks').fadeOut('slow');
+    });
+
+    // для вывода окна "подтверждение заявки"
+    $('form').submit(function (e) {
+        e.preventDefault();/* отключаем перезагрузку страницы */
+        $(this).find("input").val("");
+        $('#consultation').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+        $('form').trigger('reset');
+    });
+    // mailer
+    //   $('form').submit(function (e) {
+    //     e.preventDefault();/* отключаем перезагрузку страницы */
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "mailer/smart.php",
+    //         data: $(this).serialize()
+    //     }).done(function () {
+    //         $(this).find("input").val("");
+    //         $('#consultation').fadeOut();
+    //         $('.overlay, #thanks').fadeIn('slow');
+
+    //         $('form').trigger('reset');
+    //     });
+    //     return false;
+    // });
     // маска телефон
     let inputs = document.querySelectorAll('input[type="tel"]');
     let im = new Inputmask('+38(999) 999-99-99');
