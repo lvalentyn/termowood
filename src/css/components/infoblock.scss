@@ -121,6 +121,7 @@
     }
     &__wrapper {
         width: 933px;
+        margin-left: 10px;
     }
     &__tabs {
         width: 100%;
@@ -177,7 +178,7 @@
         justify-content: space-between;
         padding: 0px 51px;
         &_text {
-            width: 472px;
+            width: 358px;
             font-weight: 600;
             font-size: 1.8rem;
             line-height: 2.7rem;
