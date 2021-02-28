@@ -78,7 +78,19 @@
     }
     &__slide {
         outline: none;
-        &.slick-slide {
+        &.slick-slide:nth-child(even) {
+            opacity: .5;
+            width: 100px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                transform: scale(.5);
+                transition: all .5s ease;
+            }
+        }
+        &.slick-slide:nth-child(odd) {
             opacity: .5;
             width: 100px;
             height: 200px;
@@ -90,7 +102,7 @@
                 transition: all .5s ease;
             }
         }
-        &.slick-center {
+        &.slick-slide.slick-center {
             opacity: 1;
             width: 200px;
             height: 200px;
