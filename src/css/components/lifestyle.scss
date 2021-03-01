@@ -146,8 +146,11 @@
         display: block;
     }
 }
-#lg-download {
+#lg-download, #lg-actual-size {
     display: none;
+}
+.lg-backdrop {
+    background-color: rgba(16, 16, 16, .95);
 }
 
 @media (max-width: 1600px) {

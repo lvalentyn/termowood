@@ -291,7 +291,7 @@
             align-items: flex-start;
         }
         &__item {
-            width: 255px;
+            width: 300px;
             height: auto;
             &_icon {
                 width: 150px;
@@ -1299,6 +1299,10 @@
                 line-height: 2.2rem;
             }
         }
+    }
+    ._anim-items {
+        transform: translate(0px, 0px);
+        opacity: 1;
     }
 }
 @media (max-width: 768px) {

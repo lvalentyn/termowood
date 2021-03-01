@@ -78,7 +78,7 @@
     }
     &__slide {
         outline: none;
-        &.slick-slide:nth-child(even) {
+        &.slick-slide {
             opacity: .5;
             width: 100px;
             height: 200px;
@@ -86,19 +86,7 @@
             justify-content: center;
             align-items: center;
             img {
-                transform: scale(.5);
-                transition: all .5s ease;
-            }
-        }
-        &.slick-slide:nth-child(odd) {
-            opacity: .5;
-            width: 100px;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                transform: scale(.6);
+                transform: scale(.7);
                 transition: all .5s ease;
             }
         }
