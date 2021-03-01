@@ -950,15 +950,19 @@
         &__slider {
             width: 100%;
             margin: 0 20px;
+            .my-slick-prev,.my-slick-next{
+                bottom: 160px;
+            }
         }
         &__slide {
+            height: 660px;
             &_img {
                 width: 96%;
             }
             &_card {
-                width: 500px;
-                margin: 66px 20px 0 -520px;
-
+                width: 410px;
+                height: 560px;
+                margin: 66px 20px 0 -420px;
             }
         }
     }
@@ -1244,14 +1248,51 @@
         &__title {
             font-size: 2.7rem;
         }
+        &__slider {
+            .my-slick-next {
+                bottom: auto;
+                top: 20px;
+                left: 20px;
+            }
+            .my-slick-prev {
+                bottom: auto;
+                top: 80px;
+                left: 20px;
+            }
+        }
         &__slide {
-            height: 600px;
+            height: 650px;
             &_img {
-                height: 500px;
+                height: 400px;
             }
             &_card {
-                width: 400px;
-                margin: 66px 20px 0 -420px;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 660px;
+                height: 300px;
+                margin: 306px 20px 0 -685px;
+               
+            }
+            &_top {
+                width: 120px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            &_name {
+                text-align: center;
+            }
+            &_title {
+                margin: 0;
+            }
+            &_photo {
+                margin: 0 0 15px;
+            }
+            &_text {
+                width: 480px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
             &_descr {
                 font-size: 1.4rem;
@@ -1459,28 +1500,31 @@
         &__title {
             text-align: center;
         }
-        &__slider {
-            .my-slick-next {
-                bottom: auto;
-                top: 20px;
-                left: 20px;
-            }
-            .my-slick-prev {
-                bottom: auto;
-                top: 80px;
-                left: 20px;
-            }
-        }
         &__slide {
             height: auto;
+
             &_img {
-                height: 400px;
+                height: 300px;
                 box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.26);
             }
-            &_card {
-                width: 350px;
-                margin: 66px 20px 0 -351px;
+            &_name {
+                margin-right: 70px;
             }
+            &_card {
+                flex-direction: column;
+                width: 410px;
+                height: 470px;
+                margin: 250px 20px 0 -425px;
+            }
+            &_top {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            &_text {
+                width: auto;
+            }
+            
         }
     }
     .footer {
@@ -1670,7 +1714,7 @@
     }
     .reviews {
         .container {
-            padding: 30px 0;
+            padding: 30px 0 0;
         }
         &__title {
             text-align: center;
@@ -1679,20 +1723,26 @@
         }
         &__slider {
             margin: 0 5px;
-            .my-slick-prev {
-                top: 20px;
-                right: 20px;
-            }
-            .my-slick-next {
-                top: 20px;
-                left: 80px;
-            }
+            
         }
         &__slide {
-            height: 600px;
-            &_text {overflow: scroll;}
+            &_name {
+                margin-right: 50px;
+            }
             &_card {
-                margin: 85px 0px 0 -350px;
+                width: 350px;
+                margin: 250px 0px 0 -350px;
+            }
+            &_top {
+                margin: 0;
+            }
+            &_text {
+                width: 100%;
+                overflow: scroll;
+            }
+            &_title {
+                margin-top: 100px;
+                text-align: center;
             }
         }
     }
@@ -1846,8 +1896,8 @@
     .reviews {
         &__slide {
             &_card{
-                width: 255px;
-               margin: 105px 20px 0 -270px; 
+                width: 290px;
+               margin: 280px 0px 0 -290px; 
             }
             &_top {
                 flex-direction: column;
@@ -1858,9 +1908,19 @@
             }
             &_name {
                 text-align: center;
+                margin: 0;
                 span {
                     margin: 0;
                 }
+            }
+            &_text {
+                margin-top: 20px;
+            }
+            &_title { 
+                margin-top: 200px;
+            }
+            &_descr {
+                text-align: center;
             }
         }
     }
