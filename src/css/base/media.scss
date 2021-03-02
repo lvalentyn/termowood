@@ -1574,7 +1574,10 @@
     }
     .header{ 
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0) 100%), url(../img/bg/headerbg.jpg) center center/cover no-repeat;
+        &__form {
+            width: 360px;
         }
+    }
     .about {
         &__info {
             margin: 40px 0 0;
@@ -1726,16 +1729,24 @@
             line-height: 3.2rem;
         }
         &__slider {
-            margin: 0 5px;
+            margin: 0 8px;
             
         }
         &__slide {
             &_name {
                 margin-right: 50px;
             }
+            &_img {
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+                &::after {
+                    background: linear-gradient(360deg, rgba(41, 41, 41, 0.94) 1.48%, rgba(41, 41, 41, 0) 26.11%);
+                    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+                }
+            }
             &_card {
                 width: 350px;
                 margin: 250px 0px 0 -350px;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
             }
             &_top {
                 margin: 0;
