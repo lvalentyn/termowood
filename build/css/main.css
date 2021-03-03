@@ -206,7 +206,7 @@ table {
   .page .header .container {
     padding: 200px 0 140px; }
   .page .about__video {
-    min-width: 820px; }
+    min-width: 870px; }
   .page .lifestyle__gallery_block1 {
     min-width: 470px; }
   .page .lifestyle__gallery_block2 {
@@ -1775,9 +1775,9 @@ body {
   padding: 107px 0 189px; }
 
 .about__video {
-  width: 1094px;
+  width: 1035px;
   height: 601px;
-  min-width: 1094px;
+  min-width: 1035px;
   min-height: 601px;
   background: url(../img/bg/aboutbg.jpg) center center/cover no-repeat;
   border-radius: 27px;
@@ -1818,7 +1818,7 @@ body {
 .about__info {
   min-width: 933px;
   height: 601px;
-  padding: 40px 310px 44px 60px;
+  padding: 40px 340px 44px 60px;
   background: #F7F7F7;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
