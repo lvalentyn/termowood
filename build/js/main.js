@@ -44,7 +44,7 @@ $(document).ready(function () {
         speed: 2000,
         swipe: true,
         pauseOnHover: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>',
@@ -63,7 +63,18 @@ $(document).ready(function () {
             }
         ]
     });
-
+    // const allSlides = [...document.querySelectorAll('.companies__slide')];
+    // const centerSlide = document.querySelector('.companies__slide.slick-center');
+    // let leftSlide;
+    // let rightSlide;
+    // const activeSlideIndex = allSlides.indexOf(centerSlide);
+    // function neighbors() {
+    //     rightSlide = allSlides[(activeSlideIndex + 1) % allSlides.length];
+    //     // leftSlide = allSlides[(activeSlideIndex - 1) % allSlides.length];
+    //     rightSlide.classList.add('rslide');
+    //     // leftSlide.classList.add('lslide');
+    // }
+    // neighbors();
     $('.warranty__slider').slick({
         infinite: true,
         dots: false,

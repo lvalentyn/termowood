@@ -17,8 +17,11 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 335px;
-        height: 374px;
+        width: calc(100% / 3 - 15px);
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
         &_icon {
             width: 200px;
             height: 200px;

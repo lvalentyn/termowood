@@ -1,7 +1,7 @@
 .about {
     .container {
         display: flex;
-        padding: 107px 0 189px;
+        padding: 107px 0 150px;
     }
     &__video {
         width: 1035px;
@@ -29,7 +29,6 @@
     }
     &__info {
         min-width: 933px;
-        height: 601px;
         padding: 40px 340px 44px 60px;
         background: #F7F7F7;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);

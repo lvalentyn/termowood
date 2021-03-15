@@ -89,6 +89,12 @@
                 transform: scale(.7);
                 transition: all .5s ease;
             }
+            // &.lslide, &.rslide {
+            //     img {
+            //         transform: scale(.7);
+            //         transition: all .5s ease;
+            //     }
+            // }
         }
         &.slick-slide.slick-center {
             opacity: 1;

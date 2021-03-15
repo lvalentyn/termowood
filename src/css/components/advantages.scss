@@ -1,5 +1,5 @@
 .advantages {
-    padding: 131px 0 67px;
+    padding: 131px 0 107px;
     background: linear-gradient(0deg, rgba(16, 16, 16, 0.84), rgba(16, 16, 16, 0.84)), url(../img/bg/advantagesbg.jpg) center center/cover no-repeat;
     &__title {
         font-weight: 500;
@@ -17,8 +17,11 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 335px;
-        height: 374px;
+        width: calc(100% / 3 - 15px);
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
         &_icon {
             width: 200px;
             height: 200px;
