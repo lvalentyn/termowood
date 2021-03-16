@@ -1,7 +1,6 @@
 
 .header__form, .lookingfor__form, .footer__form {
-    width: 570px;
-    height: 570px;
+    width: 100%;
     padding: 60px 40px 90px;
     background: linear-gradient(317.11deg, #0C0C0C 0%, #2B2B2B 100%);
     box-shadow: 5px 5px 15px #000000;
@@ -49,7 +48,6 @@
     }
 }
 .header__form {
-    width: 500px;
     padding: 45px 30px 60px;
 }
 

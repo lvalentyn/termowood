@@ -7,8 +7,11 @@
         padding: 238px 0 155px;
     }
     &__left {
-        margin-top: 30px;
-        max-width: 900px;
+        width: 60%;
+        margin: 30px 20px 0 0;
+    }
+    &__right {
+        width: 30%;
     }
     &__title {
         font-weight: 600;

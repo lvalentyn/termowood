@@ -28,15 +28,24 @@
         }
     }
     &__info {
-        min-width: 933px;
-        padding: 40px 340px 44px 60px;
-        background: #F7F7F7;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-        border-radius: 31px;
-        margin: 0 -240px 0 73px;
+        margin: 0 0px 0 80px;
+        padding: 30px 40px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 130%;
+            height: 100%;
+            background: #F7F7F7;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+            border-radius: 31px;
+            z-index: -1;
+        }
     }
     &__title {
-        margin-left: -90px;
+        margin-left: -70px;
         font-weight: 600;
         font-size: 4.2rem;
         line-height: 150.9%;
