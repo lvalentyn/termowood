@@ -1,14 +1,21 @@
 
 /* Jquery */
 $(document).ready(function () {
-    // burger 
-    const brg = document.querySelector('.burger');
-    $('.burger').click(function () {
-        $('.burger, .navbar__center').toggleClass('active');
+    /* burgermenu */
+    const menu = document.querySelector('.navbar__center'),
+        menuItems = document.querySelectorAll('.navbar__item'),
+        hamburger = document.querySelector('.burger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active')
+        menu.classList.toggle('active')
     });
-    // $('.burger, .navbar__center').click(function () {
-    //     $('.burger, .navbar__center').removeClass('active');
-    // });
+    menuItems.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.toggle('active')
+            menu.classList.toggle('active')
+        })
+    });
     // navmenu on scroll
     $(window).scroll(function () {
         if (this.scrollY > 40) {
