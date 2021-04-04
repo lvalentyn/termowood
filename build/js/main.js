@@ -70,18 +70,6 @@ $(document).ready(function () {
             }
         ]
     });
-    // const allSlides = [...document.querySelectorAll('.companies__slide')];
-    // const centerSlide = document.querySelector('.companies__slide.slick-center');
-    // let leftSlide;
-    // let rightSlide;
-    // const activeSlideIndex = allSlides.indexOf(centerSlide);
-    // function neighbors() {
-    //     rightSlide = allSlides[(activeSlideIndex + 1) % allSlides.length];
-    //     // leftSlide = allSlides[(activeSlideIndex - 1) % allSlides.length];
-    //     rightSlide.classList.add('rslide');
-    //     // leftSlide.classList.add('lslide');
-    // }
-    // neighbors();
     $('.warranty__slider').slick({
         infinite: true,
         dots: false,
@@ -145,7 +133,6 @@ $(document).ready(function () {
             .siblings().removeClass('active');
     });
     // modal
-
     // header btns
     $('.infoblock__btn, .nav__btn').on('click', function () {
         $('.overlay, #consultation').fadeIn('slow');
@@ -162,22 +149,6 @@ $(document).ready(function () {
         $('.overlay, #thanks').fadeIn('slow');
         $('form').trigger('reset');
     });
-    // mailer
-    //   $('form').submit(function (e) {
-    //     e.preventDefault();/* отключаем перезагрузку страницы */
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "mailer/smart.php",
-    //         data: $(this).serialize()
-    //     }).done(function () {
-    //         $(this).find("input").val("");
-    //         $('#consultation').fadeOut();
-    //         $('.overlay, #thanks').fadeIn('slow');
-
-    //         $('form').trigger('reset');
-    //     });
-    //     return false;
-    // });
     // маска телефон
     let inputs = document.querySelectorAll('input[type="tel"]');
     let im = new Inputmask('+38(999) 999-99-99');
